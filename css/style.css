@@ -14,7 +14,7 @@
 /*XXXXXHEADERXXXXX*/
 
 header {
-    background: linear-gradient(rgba(63, 63, 63, 0.164), rgba(80, 80, 80, 0.128)), url(../img/maderaDos.jpg);
+    background: linear-gradient(rgba(94, 93, 93, 0.402), rgba(145, 144, 144, 0.398)), url(../img/maderaDos.jpg);
     /* background-image: url(../img/maderaDos.jpg); */
     background-repeat: no-repeat;
     background-size: 100%;
@@ -41,6 +41,10 @@ header h1 {
     height: 120px;
     border-radius: 100%;
     margin-left: 120px;
+    transition: 1s;
+}
+.logo:hover{
+    transform: scale(1.09);
 }
 
 .redesSociales {
@@ -71,6 +75,7 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .heroSection div {
@@ -82,9 +87,9 @@ header h1 {
 }
 
 .heroSection div h2 {
-    color: rgb(0, 0, 0);
+    
     font-size: 80px;
-    border: 5px solid rgb(0, 0, 0);
+    border: 5px solid white;
     font-family: 'Lora', serif;
     margin-bottom: 90px;
     padding-left: 50px;
@@ -96,7 +101,7 @@ header h1 {
 }
 
 .heroSection div h3 {
-    color: rgb(0, 0, 0);
+    
     font-size: 35px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 20px;
@@ -107,7 +112,7 @@ header h1 {
 
 
 .heroSection div a {
-    color: rgb(171, 171, 171);
+    
     text-decoration: none;
     text-align: center;
     font-size: 25px;
@@ -119,6 +124,7 @@ header h1 {
     font-weight: 600;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     /* transition: 3s; */
+    color: white;
 }
 .heroSection div a:hover{
     background-color: rgb(107, 99, 68);
@@ -189,6 +195,8 @@ header h1 {
     grid-auto-rows:350px ;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-right: 30px;
+    text-align: justify;
+    
     
 }
 .cuadroDos{
@@ -205,6 +213,7 @@ header h1 {
      justify-content: center;
      align-items: center;
      border: rgb(218, 213, 213) 2px dotted;
+     padding: 25px;
     
 }
 .ventajaCompetitiva h4{
@@ -596,7 +605,7 @@ input , textarea{
 
 /*XXXXFOOTERXXXX*/
 .primeraParte{
-    background: linear-gradient(rgba(63, 63, 63, 0.164), rgba(80, 80, 80, 0.128)), url(../img/maderaDos.jpg);
+    background: linear-gradient(rgba(94, 93, 93, 0.402), rgba(145, 144, 144, 0.398)), url(../img/maderaDos.jpg);
     /* background-image: url(../img/maderaDos.jpg); */
     display: flex;
     justify-content: space-around;
@@ -605,13 +614,33 @@ input , textarea{
     background-size: 100%;
     background-position: bottom;
     height: 290px;
+    
+}
+.cajas{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content:space-around;
+    align-items: center;
+    margin-right: 90px;
+}
+.redesSociales2{
+    margin: 25px;
+}
+.redesSociales2 img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    
 }
 .letras{
-    color: rgb(34, 34, 34);
+    color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 600;
-    
+}
+.letras p{
+    font-weight: 600;
+
 }
 .segundaParte{
     background-color: rgb(193, 133, 13);
@@ -624,4 +653,300 @@ input , textarea{
 .segundaParte div p{
     margin-top: 5px;
     
+}
+
+
+/*XXXXRESPONSIVEXXXX*/
+
+
+@media screen and (max-width:480px) {
+
+    /*HEADER*/
+    .redesSociales{
+        display: none;
+    }
+    h1{
+        display:none
+    }
+    header a {
+        margin-left: 35px;
+        
+    }
+    header .logo{
+        width: 100px;
+        height: 100px;
+    } 
+
+    /*HEROSECTION*/
+    .heroSection{
+        height: 60vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.278), rgba(0, 0, 0, 0.309)), url(../img/22.jpg);
+        /* background-size: contain; */
+        background-size:cover;
+        background-position-x:center ;
+        
+    }
+    .heroSection div h2{
+        border: 0;
+        font-size: 55px;
+        /* margin-top: 15px; */
+        margin-bottom: 30px;
+        color: white
+    }
+    .heroSection div h3{
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 25px;
+        color: white;
+    }
+    .heroSection div a{
+        color: white;
+    }
+
+    /*TEXTOS*/
+    .textos div{
+        display: flex;
+        flex-direction: column;
+    }
+    .textos div .cajaUno{
+        width: 412px;
+    }
+    .textos div .cajaDos{
+        width: 412px;
+    }
+    .textos div h2{
+        font-size: 40px;
+        padding-top:25px ;
+        padding-bottom: 25px;
+    }
+
+    /*DESCRIPCION*/
+    .descripcion .titulo{
+        margin-top: 75px;
+    }
+    .cuadroUno{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 40px;
+        /* align-items: center; */
+    }
+    .cuadroUno .ventajaCompetitiva{
+        margin-bottom: 25px;
+        text-align: center;
+        text-align: justify;
+        
+    }
+    .cuadroDos{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .cuadroDos .ventajaCompetitiva{
+        margin-bottom: 25px;
+        margin-right: 15px;
+        
+    }
+    .cuadroDos .ventajaCompetitiva h4{
+        text-align: center;
+    }
+    .cuadroDos .ventajaCompetitiva p{
+        text-align: justify;
+    }
+
+    /*CARTELES*/
+
+    .carteles{
+        display: none;
+    }
+
+    /*CONTACTANOS*/
+
+    .contactanos div h3{
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .contactanos div h4{
+        font-size: 15px;
+        text-align: center;
+        margin-right: 35px;
+    }
+    .contactanos .boton{
+        font-size: 25px;
+
+    }
+
+    /*HISTORIA*/
+    .historia .divImg{
+        width: 480px;
+    }
+    .historia{
+        display: grid;
+        grid-template-columns:1fr ;
+        grid-template-rows:550px 550px ;
+        color: white;
+        
+        
+    }
+    .historia .divImg{
+        width: 412px; ;
+        height:65vh ;
+        
+    }
+    .historia .divTexto h2{
+            font-size: 25px;
+            margin-bottom: 25px;
+            margin-top: 25px; 
+        }
+    .historia .divTexto div p{
+        font-size:10px ;
+        text-align: center;
+    }
+    .franquicias{
+        display: grid;
+        grid-template-columns:1fr ;
+        grid-template-rows:400px 400px ;
+        color: white;
+    }
+    .franquicias .divTexto h2{
+        font-size: 25px;
+        margin-bottom: 25px;
+        margin-top: 25px; 
+    }
+    .franquicias .divTexto div p{
+        font-size:10px ;
+        text-align: center;
+        
+    }
+    /*LOCAL*/
+    .local .localPanaderas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .local .localPanaderas div{
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+     .local .localPanaderas h3{
+        margin-top: 35px;
+        text-align: center;
+    }
+    .local .localPanaderas div p{
+        font-size: 11px;
+        padding: 0;
+        margin-left:0 ;
+    }
+
+    .local .localMostrador{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .local .localMostrador p{
+        font-size: 11px;
+        text-align: center;
+        margin-left: 15px;
+        margin-bottom: 35px;
+    }
+
+    /*GALERIA DE IMAGENES*/
+    .galeriaDeImagenes{
+        display: none;
+    }
+    /*ELEGIRNOS*/
+    .elegirnos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .elegirnos div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .elegirnos div iframe{
+        /* display: none; */
+        width:380px ;
+        height:300px ;
+    }
+    .elegirnos div h3{
+        font-size: 25px
+    }
+    .elegirnos div{
+        width: 412px;
+    }
+    .elegirnos div p{
+        font-size: 13px;
+    }
+    .elegirnos div a{
+        margin-bottom: 30px;
+    }
+
+    /*FORMULARIO*/
+    .formulario{
+        background-image: url(../img/c.jpg);
+        object-fit: cover;
+        
+    }
+
+    /*FOOTER*/
+    .primeraParte{
+        height: 250px;
+        background: linear-gradient(rgba(94, 93, 93, 0.402), rgba(145, 144, 144, 0.398)), url(../img/maderaDos.jpg);
+        background-size:contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        
+    }
+    .primeraParte .logo{
+        display: none;
+    }
+    .cajas{
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        margin-left: 80px;
+        
+        
+        
+    }
+    .primeraParte .letras{
+        font-size: 15px;
+        margin-top:0;
+        color: black;
+        
+        
+    }
+    
+    .primeraParte .redesSociales2{
+        margin-top: 0;
+       margin-bottom: 45px;
+       
+    }
+    .redesSociales2 img{
+        width: 35px;
+        height: 35px;
+        margin-top: 20px;
+    }
+    .segundaParte{
+        height: 310px;
+        
+    }
+    .segundaParte div p{
+        font-size: 10px;
+        margin-top: 12px;
+    }
+
 }
