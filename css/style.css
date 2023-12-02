@@ -231,7 +231,7 @@ header h1 {
 }
 
 .carteles .cartelUno {
-    width: 50%;
+    width: 200px;
     height: 200px;
     margin-left: 70px;
     background-color: rgb(170, 168, 159);
@@ -245,7 +245,7 @@ header h1 {
 }
 
 .carteles .cartelDos {
-    width: 50%;
+    width: 200px;
     height: 200px;
 
     background-color: rgb(156, 153, 133);
