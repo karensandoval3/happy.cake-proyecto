@@ -231,7 +231,7 @@ header h1 {
 }
 
 .carteles .cartelUno {
-    width: 200px;
+    width: 50%;
     height: 200px;
     margin-left: 70px;
     background-color: rgb(170, 168, 159);
@@ -245,7 +245,7 @@ header h1 {
 }
 
 .carteles .cartelDos {
-    width: 200px;
+    width: 50%;
     height: 200px;
 
     background-color: rgb(156, 153, 133);
@@ -324,7 +324,7 @@ header h1 {
 
 .franquicias{
     display: grid;
-    grid-template-columns:759px 759px;
+    grid-template-columns:50% 50%;
     grid-template-rows:100vh ;
 }
 .franquicias .divImg img{
