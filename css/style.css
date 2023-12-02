@@ -868,6 +868,7 @@ textarea {
         grid-template-columns: 1fr;
         grid-template-rows: 550px 550px;
         color: white;
+        margin-bottom: 0;
 
 
     }
@@ -888,6 +889,7 @@ textarea {
         grid-template-columns: 1fr;
         grid-template-rows: 400px 400px;
         color: white;
+        margin-top: 0;
     }
     .franquicias .divtexto{
         width: 100%;
@@ -1089,7 +1091,7 @@ textarea {
     }
 
     .segundaParte div p {
-        font-size: 10px;
+        font-size: 9px;
         margin-top: 12px;
     }
 
