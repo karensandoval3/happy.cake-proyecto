@@ -292,7 +292,7 @@ header h1 {
     width: 100%;
     display: grid;
     grid-template-columns:50% 50%;
-    grid-template-rows:150vh ;
+    grid-template-rows:130vh ;
 }
 .divImg{
     width: auto;
@@ -325,7 +325,7 @@ header h1 {
 .franquicias{
     display: grid;
     grid-template-columns:50% 50%;
-    grid-template-rows:100vh ;
+    grid-template-rows:80vh ;
 }
 .franquicias .divImg img{
     width: 100%;
@@ -855,6 +855,9 @@ input , textarea{
         text-align: justify;
         margin-right: 20px;
     }
+    .localPanaderas div p br{
+        display: none;
+    }
 
     .local .localMostrador{
         display: flex;
@@ -865,14 +868,18 @@ input , textarea{
         
 
     }
+    .localMostrador p br{
+        display: none;
+    }
     .local .localMostrador p{
         font-size: 11px;
         padding: 15px;
         margin-left:15px ;
         /* text-align: center; */
     }
-    .local .localMostrador div img{
-        margin-left: 20px;
+    .local .localMostrador img{
+        /* margin-left: 20px; */
+        margin-right: 50px;
     }
 
     /*GALERIA DE IMAGENES*/
@@ -964,7 +971,7 @@ input , textarea{
         margin-top: 20px;
     }
     .segundaParte{
-        height: 310px;
+        height: 100px;
         
     }
     .segundaParte div p{
