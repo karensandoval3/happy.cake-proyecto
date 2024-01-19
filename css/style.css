@@ -1043,6 +1043,9 @@ textarea {
         object-fit: cover;
 
     }
+    form{
+        width: 100%;
+    }
     .formulario form div input{
         /* width: 90%; */
         margin: 3px;
