@@ -867,7 +867,7 @@ textarea {
     .historia {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 390px 550px;
+        grid-template-rows: 390px 500px;
         color: white;
         margin-bottom: 0;
         
