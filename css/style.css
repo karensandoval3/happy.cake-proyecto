@@ -867,7 +867,7 @@ textarea {
     .historia {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 390px 500px;
+        grid-template-rows: 390px 550px;
         color: white;
         margin-bottom: 0;
         
@@ -876,8 +876,11 @@ textarea {
     }
     .divTexto{
         margin-top: 0;
-        grid: row gap 0; ;
+        /* grid: row gap 0; ; */
     } 
+    .divTexto p{
+        margin-bottom: 25px;
+    }
 
     .historia .divTexto h2 {
         font-size: 25px;
