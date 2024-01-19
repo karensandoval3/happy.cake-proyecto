@@ -872,6 +872,9 @@ textarea {
 
 
     }
+    .divTexto{
+        margin-top: 0;
+    } 
 
     .historia .divTexto h2 {
         font-size: 25px;
