@@ -1045,8 +1045,7 @@ textarea {
 
     }
     form{
-        width: 420px;
-        margin: 50px;
+        width: 100%;
     }
 
     /*FOOTER*/
