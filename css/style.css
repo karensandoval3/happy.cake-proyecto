@@ -310,6 +310,7 @@ header h1 {
 
 .divImg {
     width: auto;
+    /* height: auto; */
 }
 
 .historia .divImg img {
@@ -866,7 +867,7 @@ textarea {
     .historia {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 550px 550px;
+        grid-template-rows: 390px 550px;
         color: white;
         margin-bottom: 0;
 
